@@ -30,8 +30,8 @@ Authentication · Group management · Member invite and removal · Four-mode exp
 
 | | |
 |---|---|
-| **Live Application** | [https://splitease.vercel.app](https://splitease.vercel.app) |
-| **GitHub Repository** | [https://github.com/yourusername/splitease](https://github.com/yourusername/splitease) |
+| **Live Application** | [https://splitease.vercel.app]([https://splitease.vercel.app](https://split-wise-delta.vercel.app/)) |
+| **GitHub Repository** | [[https://github.com/yourusername/splitease](https://github.com/yourusername/splitease)](https://github.com/anushkajain130/Split_wise) |
 
 > Replace the URLs above with the actual deployed URL and repository link.
 
