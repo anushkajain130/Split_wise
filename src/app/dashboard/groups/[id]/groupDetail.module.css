@@ -1,0 +1,341 @@
+.page {
+  animation: fadeIn 0.4s ease;
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+}
+
+.headerActions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.groupHero {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-6);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+.groupAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.groupInfo {
+  flex: 1;
+}
+
+.groupName {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-1);
+}
+
+.groupDesc {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.myBalanceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding-left: var(--space-6);
+  border-left: 1px solid var(--border-color);
+}
+
+.balanceLabel {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.balanceAmount {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.balanceStatus {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.contentLayout {
+  display: flex;
+  gap: var(--space-8);
+  align-items: flex-start;
+}
+
+.mainContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.sideContent {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--space-2);
+}
+
+.tab {
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--text-primary);
+  background: var(--bg-glass);
+}
+
+.activeTab {
+  color: var(--text-primary);
+  background: var(--bg-glass-hover);
+}
+
+.tabHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+}
+
+/* Expenses List */
+.expenseList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.expenseCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  cursor: pointer;
+}
+
+.expenseIcon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+.expenseDetails {
+  flex: 1;
+  overflow: hidden;
+}
+
+.expenseTitle {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expenseMeta {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}
+
+.expenseTotal {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.amountLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.amountValue {
+  font-weight: 600;
+  font-size: var(--font-size-base);
+}
+
+/* Balances */
+.balanceList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+}
+
+.balanceCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+}
+
+.balanceUser {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+/* Simplified Debts */
+.sectionSubtitle {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.debtList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.debtItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+}
+
+.debtor {
+  font-weight: 600;
+}
+
+.owesText {
+  color: var(--text-tertiary);
+}
+
+.creditor {
+  font-weight: 600;
+}
+
+.debtAmount {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--color-negative);
+}
+
+/* Sidebar - Members */
+.membersCard {
+  padding: var(--space-5);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-4);
+}
+
+.cardHeader h3 {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+}
+
+.memberList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.memberItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.memberInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.memberName {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.memberRole {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .contentLayout {
+    flex-direction: column;
+  }
+  
+  .sideContent {
+    width: 100%;
+    order: -1;
+    margin-bottom: var(--space-6);
+  }
+  
+  .groupHero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .myBalanceCard {
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+    padding-left: 0;
+    padding-top: var(--space-4);
+    align-items: center;
+    width: 100%;
+  }
+}

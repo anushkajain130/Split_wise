@@ -1,0 +1,132 @@
+.page {
+  animation: fadeIn 0.4s ease;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-1);
+}
+
+.subtitle {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.settingsCard {
+  padding: var(--space-6);
+}
+
+.cardTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Members section */
+.inviteForm {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+.memberList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.memberItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+}
+
+.memberInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.memberDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.memberName {
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+}
+
+.memberEmail {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}
+
+.memberActions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Danger Zone */
+.dangerAction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4);
+  background: rgba(231, 76, 60, 0.05);
+  border: 1px solid rgba(231, 76, 60, 0.2);
+  border-radius: var(--radius-md);
+}
+
+.dangerTitle {
+  font-weight: 600;
+  color: var(--color-negative);
+  margin-bottom: 2px;
+}
+
+.dangerDesc {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 640px) {
+  .memberItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+  
+  .memberActions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .dangerAction {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+  }
+}

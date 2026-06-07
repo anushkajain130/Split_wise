@@ -1,0 +1,62 @@
+.page {
+  animation: fadeIn 0.4s ease;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-6);
+}
+
+.profileCard {
+  padding: var(--space-8);
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.userEmail {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .profileCard {
+    padding: var(--space-6);
+  }
+  
+  .avatarSection {
+    flex-direction: column;
+    text-align: center;
+  }
+}

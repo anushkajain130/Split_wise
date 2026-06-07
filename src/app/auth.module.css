@@ -1,0 +1,107 @@
+.authPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.authGlow {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(26, 188, 156, 0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.authCard {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  animation: fadeInUp 0.5s ease;
+  position: relative;
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.authLogo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-6);
+  text-decoration: none;
+}
+
+.authLogoText {
+  font-weight: 800;
+  font-size: var(--font-size-xl);
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #3498db 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.authTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.authSubtitle {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.authButton {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.authFooter {
+  text-align: center;
+  margin-top: var(--space-6);
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+.authDivider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+.authDivider::before,
+.authDivider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border-color);
+}
+
+@media (max-width: 480px) {
+  .authCard {
+    padding: var(--space-6);
+  }
+}

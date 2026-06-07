@@ -1,0 +1,135 @@
+.page {
+  animation: fadeIn 0.4s ease;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: var(--space-8);
+}
+
+.header {
+  margin-bottom: var(--space-6);
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-tertiary);
+  padding: 4px;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-8);
+}
+
+.tab {
+  flex: 1;
+  padding: var(--space-2) var(--space-4);
+  background: transparent;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.tab:hover {
+  color: var(--text-primary);
+}
+
+.activeTab {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Suggested Debts */
+.debtList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.debtCard {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.debtInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.debtor, .creditor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.name {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.debtArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.debtAmount {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-positive);
+}
+
+.arrowIcon {
+  color: var(--text-muted);
+  font-size: var(--font-size-xl);
+}
+
+/* Manual Form */
+.manualForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.formRow {
+  display: flex;
+  gap: var(--space-4);
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: var(--space-6);
+  }
+  
+  .formRow {
+    flex-direction: column;
+  }
+}

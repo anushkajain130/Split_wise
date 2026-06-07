@@ -1,0 +1,263 @@
+.page {
+  animation: fadeIn 0.4s ease;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  display: flex;
+  gap: var(--space-6);
+  flex: 1;
+  min-height: 0;
+}
+
+.mainInfo {
+  flex: 3;
+  overflow-y: auto;
+  padding-right: var(--space-2);
+}
+
+.chatSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+/* Expense Card */
+.expenseCard {
+  padding: var(--space-8);
+  margin-bottom: var(--space-6);
+}
+
+.expenseHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.expenseIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.expenseTitleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.expenseTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 800;
+  margin-bottom: var(--space-1);
+}
+
+.expenseAmount {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-negative);
+  margin-bottom: var(--space-2);
+}
+
+.expenseMeta {
+  font-size: var(--font-size-sm);
+  color: var(--text-tertiary);
+}
+
+.expenseNotes {
+  margin-bottom: var(--space-8);
+  padding: var(--space-4);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+}
+
+.expenseNotes h4 {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Splits Section */
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.splitsList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.splitItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.splitUser {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.splitName {
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+.splitAmounts {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.paidBadge {
+  background: rgba(46, 204, 113, 0.15);
+  color: var(--color-positive);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.owedAmount {
+  font-weight: 600;
+}
+
+.actionsSection {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Chat Section */
+.chatCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chatHeader {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.chatMessages {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.emptyChat {
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-8);
+}
+
+.messageWrapper {
+  display: flex;
+  gap: var(--space-3);
+  max-width: 85%;
+}
+
+.messageMine {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.messageMine .messageContent {
+  align-items: flex-end;
+}
+
+.messageAuthor {
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-left: 4px;
+}
+
+.messageMine .messageAuthor {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+.messageBubble {
+  background: var(--bg-tertiary);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border-top-left-radius: 4px;
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+}
+
+.messageMine .messageBubble {
+  background: var(--accent-primary);
+  color: white;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: 4px;
+}
+
+.messageTime {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  align-self: flex-end;
+}
+
+.chatInputForm {
+  padding: var(--space-4);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  gap: var(--space-2);
+  background: var(--bg-secondary);
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .page {
+    height: auto;
+    display: block;
+  }
+  
+  .layout {
+    flex-direction: column;
+  }
+  
+  .chatSection {
+    height: 500px;
+  }
+}
